@@ -1,0 +1,130 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  weight: 100%;
+
+  
+}
+.background {
+
+  width: 1440px;
+  height: 1024px;
+  background-attachment: fixed;
+  background-repeat:no-repeat;
+  background: cover;
+  background-image: url(photo/Illustration.png);
+
+}
+.right {
+
+  width: 500px;
+  height: 721px;
+  top: 70px;
+  border-radius: 5px;
+  background: #ffff;
+  box-shadow:  0px 10px 40px rgba(0, 0, 0, 0.2);
+  margin-left: 800px;
+  
+  
+}
+.text {
+  font-family: 'Roboto', sans-serif;
+  color: rgba(116, 138, 161, 1);
+  font-size: 16px;
+  font-weight: 400px;
+  line-height: 23px;
+  letter-spacing: 0px;
+  text-align: left;
+  margin-left: 10px;
+  padding: 10px;
+
+}
+.title {
+  font-family: 'Roboto', sans-serif;
+  font-size: 48px;
+  font-weight: 400px;
+  line-height: 68px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: rgba(49, 57, 77, 1);
+  padding: 10px;
+  display: inline-block;
+  display: flex;
+  margin-top: 10px;
+
+}
+.form-control {
+
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 5px;
+  border: 2px solid #172432;
+  height: 40px;
+  margin-bottom:-5px;
+}
+
+button {
+  display: inline-block;
+  border: none;
+  color: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns:auto auto;
+  gap: 20px;
+  padding: 30px;
+}
+
+.grid-container > div 
+{
+  text-align: center;
+  justify-content: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+.item1 { grid-area: gridStart; }
+.item2 { grid-area: germany; }
+.item3 { grid-area: berlin; }
+.item4 { grid-area: zip; }
+.item5 { grid-area: signUpNow; }
+.item6 { grid-area: blueFacebook; }
+.item7 { grid-area: darkFacebook; }
+.grid-container {
+grid-template-areas:
+   'gridStart  gridStart gridStart gridStart'
+  'germany  germany germany  germany '
+  ' berlin berlin zip zip'
+  'signUpNow  signUpNow signUpNow signUpNow'
+  'blueFacebook blueFacebook  darkFacebook  darkFacebook';
+}
+.item5 {
+  background: #29cb97;
+  border-radius: 5px;
+  text-decoration: none; 
+  display: inline-block;
+
+   
+}
+.item6{
+  background-color: #255B9B;
+box-shadow: 0px 10px 40px #D6DCEA;
+border-radius: 5px;
+}
+
+.item7{
+  background: #00ADEE;
+box-shadow: 0px 10px 40px #D6DCEA;
+border-radius: 5px;
+}
+
